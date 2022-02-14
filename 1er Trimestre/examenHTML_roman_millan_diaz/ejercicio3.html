@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+    </head>
+    <body>
+        <h1>Formulario</h1>
+        
+        <form action="https://iesjacaranda.es/lmsgi/resultado.php" method="get">
+            <table>
+                <tr>
+                    <td rowspan="10">
+                         <!--Separador 1-->
+                        <fieldset>
+                            <legend>Preferencias</legend>
+                            <p>DNI <input type="text" placeholder="Introducir DNI" maxlength="9"></p>
+                            <p>Nombre <input type="text" placeholder="Introducir Nombre" maxlength="20"></p>
+                            <p>Apellidos <input type="text" placeholder="Introducir Apellidos" maxlength="40"></p>
+                            <p>Email <input type="email" name="email" id="" placeholder="Introducir correo electrónico"></p>
+                            <p>Elija un color: <input type="color" name="color" id=""></p>
+                            <select name="selecMb" id="" size="5">
+                                <option value="100">100 Mbits</option>
+                                <option value="1000">1000 Mbits</option>
+                            </select>
+                            <br><br>
+                            <textarea name="area1" id="" cols="49" rows="6">Por favor, escriba aquí</textarea>
+                            <br>
+                            <input type="checkbox" name="amd" id=""> AMD <br>
+                            <input type="checkbox" name="intel5" id=""> Intel i5 <br>
+                            <input type="checkbox" name="intel7" id=""> Intel i7 <br> <br>
+                            <p>Elija un ahora <input type="time" name="hora" id=""></p>
+                            <input type="radio" name="g" id="" value="3g"> 3G <br>
+                            <input type="radio" name="g" id="" value="4g"> 4G <br>
+                            <input type="radio" name="g" id="" value="5g"> 5G <br>
+                            <p>Elija un fichero: <input type="file" name="fichero" id=""></p>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <!--Separador 2-->
+                        <fieldset>
+                            <legend>Opciones</legend>
+                            <input type="checkbox" name="historia" id=""> Historia <br>
+                            <input type="checkbox" name="geografia" id=""> Geografía <br>
+                            <input type="checkbox" name="Lengua" id=""> Lengua <br>
+                            <input type="checkbox" name="matematicas" id=""> Matemáticas <br>
+                            <p>Elija un fichero: <input type="file" name="fichero2" id=""></p>
+                            <textarea name="area1" id="" cols="49" rows="8" placeholder="Inserte aquí el texto"></textarea>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!--Separador 3-->
+                        <fieldset>
+                            <legend>Cumplimente la información requerida</legend>
+                            <p>Elija un fichero: <input type="file" name="fichero3" id=""></p>
+                            <select name="tipo" id="">
+                                <option value="usb">USB</option>
+                                <option value="paralelo">Paralelo</option>
+                                <option value="ps2">PS2</option>
+                            </select>
+                            <p>
+                                <input type="radio" name="so" id=""> Windows 
+                                <input type="radio" name="so" id=""> Mac 
+                                <input type="radio" name="so" id=""> Linux
+                            </p> 
+                            <p>Elija una fecha: <input type="date" name="fecha" id=""></p>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Enviar" name="Enviar" method="get">
+                        <input type="reset" value="Reset" name="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

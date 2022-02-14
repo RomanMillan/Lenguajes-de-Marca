@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>formulario</title>
+        <style>
+            legend {
+                padding: 7pt;
+                background-color: royalblue;
+                color: rgb(255, 244, 244);
+                border-radius: 10pt;
+                text-align: left;
+                margin-left: 20pt;
+            }
+            fieldset {
+                margin-bottom: 20px;
+                background-color: #d0d4fc;
+            }
+            input {
+                margin-bottom: 10px;
+            }
+            select{
+                margin-bottom: 10px;
+            }
+            textarea{
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body style="text-align: center;font-family: 'Fuzzy Bubbles', cursive;background-color: #ecf8f7;">
+        <h1 style="margin: 0pt;text-decoration-line: underline;">Formulario Curriculum Vitae</h1>
+        <form action="http://www.iesjacaranda-brenes.org/lmsgi/resultado.php" method="get"  style="margin-right: 70pt;margin-left: 70pt;margin-top: 10pt;margin-bottom: 10pt;">
+            <label for="Datos Personales">
+               <fieldset>
+                   <legend>Datos Personales</legend>
+                    Sexo:
+                    <select name="sexo" id="" required>
+                        <option value="x">...</option>
+                        <option value="H">Hombre</option>
+                        <option value="M">Mujer</option>
+                        <option value="O">Otro</option>
+                    </select>
+                    <br>
+                    Nombre: <input type="text" required> <br>
+                    Apellidos: <input type="text" required> <br>
+                    DNI: <input type="text" required><br>
+                    Fecha Nacimiento: <input type="date" name="fecha" id=""required> <br>
+                    Nacionalidad: <input type="text" required> <br>
+                    Residencia: <input type="text"> <br>
+                    Correo: <input type="email" name="correo" id="" placeholder="usuario@gmail.com"> <br>
+                    Teléfono: <input type="number" name="telefono" id=""> <br>
+                    Móvil: <input type="number" name="" id=""><br>
+               </fieldset>
+               <fieldset>
+                   <legend >Datos Académicos</legend>
+                   Estudios y otros titulos <br>
+                   <textarea name="datos" id="" cols="80" rows="5" placeholder="- Grado en Ingeniería en Tecnología Industrial (Univ. Pais Vasco)"></textarea>
+               </fieldset>
+               <fieldset>
+                   <legend>Datos Profesionales</legend>
+                   Expreiencia Laboral <br>
+                   <textarea name="experienciaLabotral" id="" cols="80" rows="5" placeholder="- Informatico en Minik S.A (2 años)"></textarea>
+               </fieldset>
+               <fieldset>
+                   <legend>Otros Intereses</legend>
+                    <input type="checkbox" name="coche" id=""> Coche propio <br>
+                    <input type="checkbox" name="disponibilidad" id=""> Disponibilidad Laboral <br>
+                    Actividades Extralaborales <br>
+                    <textarea name="actExtralaboral" id="" cols="80" rows="5" placeholder="- Resolver Sudokus"></textarea> <br>
+                    Observación Extra <br>
+                    <textarea name="obeservacionExtra" id="" cols="80" rows="5" placeholder="Dí algunas cualidades sobre usted u observación"></textarea>
+                    <br>
+                    <button type="submit" method="get" style="background-color: rgb(60, 190, 43);color:seashell;border-radius: 10%;width: 100px;padding: 15px 10px;font-size: 20px;"><b> Enviar</b></button> 
+                    <button type="reset"style="background-color: red ;color:seashell;border-radius: 10%;width: 100px;padding: 15px 10px;font-size: 20px"><b> Borrar</b></button>
+               </fieldset>
+            </label>
+        </form>
+        <form action="informatica.html" method="get">
+            <button type="submit" style="background-color: royalblue;color:seashell;border-radius: 10%;width: 100px;padding: 10px 5px;font-size: 20px;"><b> Atras </b></button>
+        </form>
+    </body>
+</html>
